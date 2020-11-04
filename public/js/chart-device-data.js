@@ -141,7 +141,7 @@ $(document).ready(() => {
 
       // time and either temperature or humidity are required
       if (!messageData.MessageDate || !messageData.IotData.temperature || !messageData.IotData.humidity) {
-        return;
+        //return;
       }
 
       // find or add device to list of tracked devices
