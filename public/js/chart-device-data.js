@@ -150,6 +150,10 @@ $(document).ready(() => {
         }
       }
 
+    // Add temperature value
+    const temp = document.getElementById('temperature');
+    temp.innerText = parseFloat(messageData.IotData.temperature);
+
       myLineChart.update();
     } catch (err) {
       console.error(err);
